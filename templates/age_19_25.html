@@ -2,20 +2,35 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Ages 19-25</title>
+  <title>Ages 19–25</title>
   <link rel="stylesheet" href="/static/css/styles.css">
+  <style>
+    body { text-align: center; margin-top: 40px; }
+    button { margin: 8px; padding: 12px 22px; font-size: 16px; }
+    h2 { margin-top: 20px; }
+  </style>
 </head>
 <body>
-  <h1>For Ages 19–25</h1>
 
-  <p>Upload your project to receive a certificate:</p>
+<h1>For Ages 19–25</h1>
 
-  <form action="/project/upload" method="POST" enctype="multipart/form-data">
-    <input name="name" placeholder="Your name" required><br><br>
+<!-- View Problem Statements -->
+<p>
+  <a href="/problems">
+      <button>View Day-to-Day Problem Statements</button>
+  </a>
+</p>
+
+<!-- Upload Project -->
+<h2>Upload Your Project</h2>
+<form action="/project/upload" method="POST" enctype="multipart/form-data">
+    <input name="name" placeholder="Enter Your Name" required><br><br>
     <input type="file" name="project" required><br><br>
     <button type="submit">Upload Project</button>
-  </form>
+</form>
 
-  <p><a href="/"><button>Back to Home</button></a></p>
+<!-- Back Button -->
+<p><a href="/"><button>Back to Home</button></a></p>
+
 </body>
 </html>
