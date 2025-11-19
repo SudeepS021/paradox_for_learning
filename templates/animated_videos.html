@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Animated Videos</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <style>
+    body { text-align: center; margin-top: 40px; }
+    button { margin: 10px; padding: 12px 22px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1>Kids Animated Videos</h1>
+
+<!-- YouTube Videos -->
+<p>
+  <a href="https://www.youtube.com/watch?v=U6f1X-YHk7c" target="_blank"><button>Animated Video 1</button></a>
+  <a href="https://www.youtube.com/watch?v=36Y_3y0J7b8" target="_blank"><button>Animated Video 2</button></a>
+  <a href="https://www.youtube.com/watch?v=u5Y96pFjJr8" target="_blank"><button>Animated Video 3</button></a>
+  <a href="https://www.youtube.com/watch?v=DX7cRzFq2wg" target="_blank"><button>Animated Video 4</button></a>
+</p>
+
+<h2>Your Uploaded Videos</h2>
+
+{% if videos %}
+    {% for vid in videos %}
+        <p>
+            <a href="/videos/{{ vid }}" target="_blank">
+                <button>{{ vid }}</button>
+            </a>
+        </p>
+    {% endfor %}
+{% else %}
+    <p>No uploaded videos yet.</p>
+{% endif %}
+
+<p><a href="/age/1-5"><button>Back to Age 1–5</button></a></p>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* ---------- GLOBAL PAGE STYLE ---------- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+}
+
+/* ---------- MAIN TITLE ---------- */
+h1 {
+    margin-top: 40px;
+    color: #333;
+}
+
+/* ---------- SUBTITLES ---------- */
+h2, h3 {
+    color: #444;
+    margin-top: 20px;
+}
+
+/* ---------- BUTTON STYLE ---------- */
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #2f6da7;
+}
+
+/* ---------- CARD STYLE (USED FOR CENTER BLOCKS) ---------- */
+.card {
+    background: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- LINK STYLING (REMOVE UNDERLINE) ---------- */
+a {
+    text-decoration: none;
+}
+
+/* ---------- VIDEO LIST STYLE ---------- */
+video {
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* ---------- BACK BUTTON STYLE ---------- */
+.back-btn {
+    margin-top: 20px;
+}
